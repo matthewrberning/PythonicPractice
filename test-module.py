@@ -2,24 +2,30 @@ import sys
 print(sys.executable)
 print(sys.version)
 
-class Employment
 
-	"""A sample Employee class"""
+class Employee:
 
-	def __inint__(self, first, last):
-		self.first = first
-		self.last = last
+    """A sample Employee class"""
 
-	@property
-	def emial(self):
-		return '{}.{}@email.com'.format(self.first, self.last)
+    def __init__(self, first, last):
+        self.first = first
+        self.last = last
 
-	@property
-	def fullname(self):
-		return '{} {}'.format(self.first, self.last)
+    @property
+    def email(self):
+        return '{}.{}@email.com'.format(self.first, self.last)
+
+    @property
+    def fullname(self):
+        return '{} {}'.format(self.first, self.last)
+
 
 emp_1 = Employee('Herbiee', 'Hancock')
 
+
+print('--------BEGIN OUTPUT----------')
 print(emp_1.first)
+print('------------------')
 print(emp_1.email)
+print('------------------')
 print(emp_1.fullname)
