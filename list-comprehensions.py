@@ -20,9 +20,9 @@ nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # my_list = [n * n for n in nums]
 # print(my_list)
 
-# using a map + lambda
-my_list = map(lambda n: n * n, nums)
-print(my_list)
+# using a map + lambda    -----------this doesn't work in python 3+
+# my_list = map(lambda n: n * n, nums)
+# print(my_list)
 
 # i want n for each n in nums if n is even
 # my_list = []
